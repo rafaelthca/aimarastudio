@@ -2,13 +2,17 @@ td {
 z-index: 2;
 }
 
-td:hover {
-background-color: black;
-opacity: 0.2;
+p {
+text-indent: 30px;
 }
 
+//td:hover {
+//background-color: black;
+//opacity: 0.2;
+//}
+
 .tabela {
-	opacity: 0.5;
+	opacity: 0.6;
 	pointer-events: none;
 	position: absolute;
 	text-align: center;
@@ -17,3 +21,16 @@ opacity: 0.2;
 	font-family: Verdana;
 	font-size: 12;
 }
+
+//#cell_1:hover + #cell_2 {
+//	background-color: black;
+//	opacity: 0.2;
+//}
+
+//#cell_1:hover ~ #cell_3 {
+//	background-color: black;
+//	opacity: 0.2;
+//}
+
+
+
