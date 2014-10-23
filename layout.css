@@ -1,0 +1,8 @@
+td {
+z-index: 2;
+}
+
+td:hover {
+background-color: white;
+opacity: 0.1;
+}
