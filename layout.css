@@ -20,6 +20,7 @@ text-indent: 30px;
 	background-color: white;
 	font-family: Verdana;
 	font-size: 12;
+	z-index: 1000;
 }
 
 //#cell_1:hover + #cell_2 {
