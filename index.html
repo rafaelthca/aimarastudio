@@ -4,45 +4,49 @@
 		<link rel="stylesheet" type="text/css" href="layout.css">
 		<script>
 
-		function enable(elem1,elem2) {
-			document.getElementById(elem1).style.backgroundColor = '#000000';
-			document.getElementById(elem1).style.opacity = 0.4;
+		function enable(elem0,elem1,elem2) {
+			document.getElementById('cell_' + elem1).style.backgroundColor = '#000000';
+			document.getElementById('cell_' + elem1).style.opacity = 0.2;
 
-			document.getElementById(elem2).style.backgroundColor = '#000000';
-			document.getElementById(elem2).style.opacity = 0.4;
+			document.getElementById('cell_' + elem2).style.backgroundColor = '#000000';
+			document.getElementById('cell_' + elem2).style.opacity = 0.2;
+
+			document.getElementById('tb' + elem0).style.display='none';
+			document.getElementById('tb' + elem1).style.display='block';
+			document.getElementById('tb' + elem2).style.display='block';
 		}
-		function disable(elem1,elem2) {
-			document.getElementById(elem1).style.opacity = 0;
-			document.getElementById(elem2).style.opacity = 0;
+		function disable(elem0,elem1,elem2) {
+			document.getElementById('cell_' + elem1).style.opacity = 0;
+			document.getElementById('cell_' + elem2).style.opacity = 0;
+
+			document.getElementById('tb' + elem1).style.display='none';
+			document.getElementById('tb' + elem2).style.display='none';
 		}
 
 		</script>
 	</head>
-	<body style="margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px" background="bg2.jpg">
+	<body style="margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px" background="Aimara_Site_BG.png">
 
-		<div style="width: 100%; position: absolute; top: 30%; text-align: center; margin-top:-74px; pointer-events: none;">
-		<img src="Aimara_Studio_W.png"/>
-		</div>
 
-		<div class="tabela" style="display: table; width: 300px; top: 50%; left: 50%; margin-top: 0px; margin-left: -150px;">
-		<div style="display: table-cell; vertical-align: middle; padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;">In computing, plain text is the contents of an ordinary sequential file readable as textual material without much processing. Plain text is different from formatted text, where style information is included, and "binary files" in which some portions must be interpreted as binary objects (encoded integers, real numbers, images, etc.).</div>
-		</div>
-
-		<div class="tabela" style="display: table; width: 300px; top: 30%; left: 20%; margin-top: 0px; margin-left: -150px;">
+		<div id="tb1" class="tabela" style="display: none; width: 300px; top: 30%; left: 20%; margin-top: 0px; margin-left: -150px;">
 		<div style="display: table-cell; vertical-align: middle; padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px; text-align: justify;"><p>Canada Listeni/ˈkænədə/ is a country in North America consisting of ten provinces and three territories. Located in the northern part of the continent, it extends from the Atlantic to the Pacific and northward into the Arctic Ocean. At 9.98 million square kilometres in total, Canada is the world's second-largest country by total area and the fourth-largest country by land area. Its common border with the United States is the world's longest land border shared by the same two countries.</p><p>
-The land that is now Canada has been inhabited for millennia by various Aboriginal peoples. Beginning in the late 15th century, British and French colonies were established on the region's Atlantic coast. As a consequence of various conflicts, the United Kingdom gained and lost North American territories until left, in the late 18th century, with what mostly comprises Canada today. Pursuant to the British North America Act, on July 1, 1867 three colonies joined to form the autonomous federal dominion of Canada. This began an accretion of provinces and territories to the new self-governing dominion. In 1931, Britain granted Canada full independence in most matters with the Statute of Westminster 1931. The Canada Act 1982 severed the vestiges of legal dependence on the British parliament.</p></div>
+			The land that is now Canada has been inhabited for millennia by various Aboriginal peoples. Beginning in the late 15th century, British and French colonies were established on the region's Atlantic coast. As a consequence of various conflicts, the United Kingdom gained and lost North American territories until left, in the late 18th century, with what mostly comprises Canada today. Pursuant to the British North America Act, on July 1, 1867 three colonies joined to form the autonomous federal dominion of Canada. This began an accretion of provinces and territories to the new self-governing dominion. In 1931, Britain granted Canada full independence in most matters with the Statute of Westminster 1931. The Canada Act 1982 severed the vestiges of legal dependence on the British parliament.</p></div>
 		</div>
 
-		<div class="tabela" style="display: table; width: 300px; top: 40%; left: 75%; margin-top: 0px; margin-left: 0px;">
+		<div id="tb2" class="tabela" style="display: none; width: 300px; top: 50%; left: 50%; margin-top: 0px; margin-left: -150px;">
+		<div style="display: table-cell; vertical-align: middle; padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;">In computing, plain text is the contents of an ordinary sequential file readable as textual material without much processing. Plain text is different from formatted text, where style information is included, and "binary files" in which some portions must be interpreted as binary objects (encoded integers, real numbers, images, etc.).</div>
+		</div>
+
+		<div id="tb3" class="tabela" style="display: none; width: 300px; top: 40%; left: 75%; margin-top: 0px; margin-left: 0px;">
 		<div style="display: table-cell; vertical-align: middle; padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 15px;">In computing, plain text is the contents of an ordinary sequential file readable as textual material without much processing. Plain text is different from formatted text, where style information is included, and "binary files" in which some portions must be interpreted as binary objects (encoded integers, real numbers, images, etc.).</div>
 		</div>
 
 
-		<table style="width: 100%; height: 100%; border-collapse: collapse;">
+		<table style="position: absolute; width: 100%; height: 100%; border-collapse: collapse;">
 		<tr>
-		<td style="width=33%;" id="cell_1" onmouseover="enable('cell_2','cell_3')" onmouseout="disable('cell_2','cell_3')"></td>
-		<td id="cell_2" style="width=34%;" onmouseover="enable('cell_1','cell_3')" onmouseout="disable('cell_1','cell_3')"></td>
-		<td id="cell_3" style="width=33%;" onmouseover="enable('cell_2','cell_1')" onmouseout="disable('cell_2','cell_1')"></td>
+		<td style="width:33%;" id="cell_1" onmouseover="enable('1','2','3')" onmouseout="disable('1','2','3')"></td>
+		<td id="cell_2" style="width:34%;" onmouseover="enable('2','1','3')" onmouseout="disable('2','1','3')"></td>
+		<td id="cell_3" style="width:33%;" onmouseover="enable('3','2','1')" onmouseout="disable('3','2','1')"></td>
 		</tr>
 		</table>
 
