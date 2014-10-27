@@ -1,14 +1,25 @@
+.tabela {
+	//pointer-events: none;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #FFFFFF;
+	font-family: Verdana;
+	font-size: 12;
+	z-index: 1000;
+	box-shadow: 0px 0px 20px #222222;
+}
+
 .main_box {
 	padding-top: 120px;
+	padding-bottom: 30px;
 	box-shadow: 0px 0px 20px #171717;
 	background-color: F0F0F0;
 	width: 1024px;
-	height: 100%;
 	left: 50%;
 	position: absolute;
 	margin-left: -512px;
 	z-index: -1000;
-
+	border-radius: 4px;
 	font-family: Verdana;
 	font-size: 12;
 }
