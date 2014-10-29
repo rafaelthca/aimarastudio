@@ -1,7 +1,6 @@
 body {
 	font-family: Verdana;
 	font-size: 12;
-
 }
 
 .tabela {
@@ -19,12 +18,12 @@ body {
 	padding-top: 90px;
 	//padding-bottom: 30px;
 	box-shadow: 0px 0px 20px #171717;
-	background-color: F0F0F0;
+	background-color: #F0F0F0;
 	width: 1024px;
 	left: 50%;
 	position: absolute;
 	margin-left: -512px;
-	z-index: -1000;
+	//z-index: -1000;
 	font-family: Verdana;
 	font-size: 12;
 	height: 100%;
@@ -58,10 +57,10 @@ body {
 .line_top {
 	padding-top: 1px;
 	top: 100%;
-	border-top: 1px solid 5F879F;
+	border-top: 1px dotted #5F879F;
 
 
-	//background-color: 646ed4;
+	//background-color: #646ed4;
 	width: 100%;
 	height: 1px;
 	position: relative;
@@ -73,16 +72,16 @@ body {
 	width: 190px;
 	text-align: center;
 	display: inline-block;
-	border-left: 1px solid transparent;
-	border-top: 1px solid transparent;
-	border-right: 1px solid transparent;
+	border-left: 1px dotted transparent;
+	border-top: 1px dotted transparent;
+	border-right: 1px dotted transparent;
 	padding-left: 4px;
 	padding-top: 15px;
 	padding-right: 4px;
 	padding-bottom: 15px;
 	border-top-left-radius:4px;
 	border-top-right-radius:4px;
-	//border-bottom: 1px solid 5F879F;
+	//border-bottom: 1px dotted #5F879F;
 
 }
 
@@ -95,24 +94,28 @@ body {
 }
 
 .li_selected {
+
 	width: 190px;
 	text-align: center;
 	display: inline-block;
   	background-color: F0F0F0;
-	border-left: 1px solid #646ed4;
-	border-top: 1px solid #646ed4;
-	border-right: 1px solid #646ed4;
+	border-left: 1px dotted #646ed4;
+	border-top: 1px dotted #646ed4;
+	border-right: 1px dotted #646ed4;
 	padding-left: 4px;
 	padding-top: 15px;
 	padding-right: 4px;
 	padding-bottom: 15px;
 	border-top-left-radius:4px;
 	border-top-right-radius:4px;
-	//border-bottom: 1px solid 5F879F;
+	//border-bottom: 1px dotted #5F879F;
+	-moz-border-radius: 5px;
 
 	}
 
 .ul_menu {
+	font-family: Tahoma;
+	font-size: 12;
 	padding-left: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -121,8 +124,7 @@ body {
 	right: 0px;
 
 	z-index: 1000;
-	//font-weight: bold;
-	font-family: arial;
+	font-weight: bold;
 }
 
 
@@ -134,20 +136,17 @@ body {
 	top: 0px;
 }
 
-.image-wrap {
-	padding-left: 10px;
-	padding-top: 10px;
-	left: -300px;
-	top: 0px;
-	overflow: hidden;
-	z-index: -2000;
-	position: absolute; 	
-
+#img_bottom {
+	left: 50%;
+	z-index: 10;
+	position: fixed; 	
+	margin-left: -512px;
+	bottom: 0px;
 }
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #313777;
 
 }
 
@@ -162,6 +161,6 @@ a {
 }
 
 #content_table td, table th {
-    border: 1px dotted 646ed4;
+    border: 1px dotted #9DA3E5;
     text-align: center;
 }
